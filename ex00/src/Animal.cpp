@@ -21,7 +21,7 @@ Animal::Animal(std::string type) : _type(type)
 
 Animal::Animal() : _type("Unknown")
 {
-    std::cout << B << "Animal created!" << RST << std::endl;
+    std::cout << B << "Unknown animal created!" << RST << std::endl;
 }
 
 
