@@ -6,19 +6,19 @@
 
 class Dog : public Animal
 {
-    private:
-        Brain *brain;
+	private:
+		Brain *brain;
 
-    public:
-        Dog(void);
-        Dog(std::string type);
-        Dog(const Dog &other);
-        ~Dog(void);
+	public:
+		Dog(void);
+		Dog(std::string type);
+		Dog(const Dog &other);
+		~Dog(void);
 
-        Dog &operator=(const Dog &other);
+		Dog &operator=(const Dog &other);
 
-        void makeSound(void) const override;
-        Brain *getBrain(void) const;
+		void makeSound(void) const override;
+		Brain *getBrain(void) const;
 };
 
 #endif

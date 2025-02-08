@@ -8,21 +8,21 @@
 
 class Animal
 {
-    protected:
-        std::string _type;
+	protected:
+		std::string _type;
 
-    public:
-        Animal();
-        Animal(std::string type);
-        Animal(const Animal &other);
-        virtual ~Animal();
+	public:
+		Animal();
+		Animal(std::string type);
+		Animal(const Animal &other);
+		virtual ~Animal();
 
-        Animal &operator=(const Animal &other);
+		Animal &operator=(const Animal &other);
 
-        std::string getType() const;
-        void setType(std::string type);
-        
-        virtual void makeSound() const;
+		std::string getType() const;
+		void setType(std::string type);
+
+		virtual void makeSound() const;
 };
 
 #endif
